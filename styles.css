@@ -1,14 +1,16 @@
 h1 {
-    size: 4rem;
+    font-size: 3rem;
     color: rgb(8, 30, 92);
     font-weight: bold;
     font-family: "Ubuntu", sans-serif;
 }
 
 h2 {
+    font-size: 2rem;
+    color: rgb(8, 30, 92);
     font-family: "Ubuntu", sans-serif;
-    font-size: 3.5rem;
-    line-height: 1.5;
+    /* font-size: 3.5rem; */
+    line-height: 3;
 }
 
 h3 {
