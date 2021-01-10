@@ -1,22 +1,29 @@
 h1 {
-    size: 4rem;
-    color: rgb(8, 30, 92);
-    font-weight: bold;
-    font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  color: rgb(8, 30, 92);
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
 }
 
 h2 {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 3.5rem;
-    line-height: 1.5;
+  font-size: 2rem;
+  color: rgb(8, 30, 92);
+  font-family: "Ubuntu", sans-serif;
+  /* font-size: 3.5rem; */
+  line-height: 3;
 }
 
 h3 {
-    font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h4 {
+  font-size: 3rem;
+  font-family: "Abril Fatface", cursive;
 }
 
 p {
-    color: grey;
+  color: grey;
 }
 
 #title {
@@ -50,21 +57,18 @@ p {
 
 
 /* download buttons */
-
 .download-button {
     margin: 5% 3% 5% 0%;
 }
 
 
 /*image section */
-
 .title-image {
     width: 120%;
 }
 
 
 /* feature section */
-
 #features {
     padding: 7% 15%;
 }
@@ -76,7 +80,6 @@ p {
 
 
 /* main idea section */
-
 #idea {
     padding: 7% 15%;
     text-align: center;
@@ -94,16 +97,16 @@ p {
 
 
 /* carousel styling */
-
 .carousel-inner {
     text-align: center;
     color: black;
 }
 
 
-/* for books webpage */
 
-body,
-html {
-    height: 100%;
-}
+/* card styling */
+/* .card-image-top {
+  object-fit: cover;
+  width: 100%;!important;
+  height: 200px;!important;
+} */
