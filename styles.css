@@ -10,6 +10,11 @@
     background-size: 100% 88%;
 }
 
+body {
+  background-image: linear-gradient(to right, #fff, #e1f2ff);
+  font-family: "Ubuntu", sans-serif;
+}
+
 h1 {
     font-size: 3rem;
     color: rgb(8, 30, 92);
@@ -26,7 +31,12 @@ h2 {
 }
 
 h3 {
-    font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(8, 30, 92);
+  font-weight: bolder;
+  padding-bottom: 2%;
+
 }
 
 h4 {
@@ -42,8 +52,10 @@ h5 {
     font-weight: bold;
 }
 
-p {
+#blurbs {
+    padding-top: 5%;
     color: grey;
+    font-family: "Ubuntu", sans-serif;
 }
 
 h5 {
@@ -101,6 +113,10 @@ h5 {
     padding: 7% 15%;
 }
 
+#offerings {
+  padding-top: 15%;
+}
+
 .feature-box {
     text-align: center;
     padding: 5%;
@@ -109,10 +125,11 @@ h5 {
 
 /* main idea section */
 
-#idea {
+#idea-section {
     padding: 7% 15%;
     text-align: center;
     color: black;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .main-idea-para {
@@ -130,6 +147,17 @@ h5 {
 .carousel-inner {
     text-align: center;
     color: black;
+}
+
+
+#location-input-txt {
+  padding-top: 15%;
+}
+
+i {
+  font-size: 4rem;
+  color: #8fd3f4;
+  padding-bottom: 5%;
 }
 
 
