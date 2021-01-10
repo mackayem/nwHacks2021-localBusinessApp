@@ -32,9 +32,3 @@ We, at Local aim at connecting local businesses with the customers. This notion 
 
 The project can be scaled for a large variety of local shops, each demarcated carefully with the category they fall in.
 The project , being hosted as open source has the potential to make new-comers and beginners both in the world of web development and open-source.
-
-## Credits
-
-Allura illustrations by Vijay Varma https://blush.design/collections/allura
-Google Fonts https://fonts.googleapis.com/
-Icons by Font Awesome https://fontawesome.com/
