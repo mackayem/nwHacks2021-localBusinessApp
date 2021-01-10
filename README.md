@@ -1,5 +1,6 @@
 # nwHacks2021-localBusinessApp
 
+
 # WELCOME TO OUR REPO!
 
 This project is created in nwHacks and hence created from scratch in 24 hours!.
@@ -14,7 +15,8 @@ Jyoti Bisht
 ### Back-end
 
 Phil Fiess
-Salona Koirala
+Salina Koirala
+
 
 ## Idea
 
