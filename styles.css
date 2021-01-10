@@ -26,7 +26,12 @@ h2 {
 }
 
 h3 {
-    font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(8, 30, 92);
+  font-weight: bolder;
+  padding-bottom: 2%;
+
 }
 
 h4 {
@@ -42,8 +47,10 @@ h5 {
     font-weight: bold;
 }
 
-p {
+#blurbs {
+    padding-top: 5%;
     color: grey;
+    font-family: "Ubuntu", sans-serif;
 }
 
 h5 {
@@ -101,6 +108,10 @@ h5 {
     padding: 7% 15%;
 }
 
+#offerings {
+  padding-top: 15%;
+}
+
 .feature-box {
     text-align: center;
     padding: 5%;
@@ -113,6 +124,7 @@ h5 {
     padding: 7% 15%;
     text-align: center;
     color: black;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .main-idea-para {
@@ -130,6 +142,17 @@ h5 {
 .carousel-inner {
     text-align: center;
     color: black;
+}
+
+
+#location-input-txt {
+  padding-top: 15%;
+}
+
+i {
+  font-size: 4rem;
+  color: rgb(112, 112, 112);
+  padding-bottom: 5%;
 }
 
 

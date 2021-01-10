@@ -37,3 +37,4 @@ The project , being hosted as open source has the potential to make new-comers a
 
 Allura illustrations by Vijay Varma https://blush.design/collections/allura
 Google Fonts https://fonts.googleapis.com/
+Icons by Font Awesome https://fontawesome.com/

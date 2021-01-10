@@ -25,7 +25,7 @@ h1 {
     font-weight: 300;
 }
 
-.row {
+.row-cards {
     max-width: 900px;
     margin: 50px auto 0;
 }
@@ -71,7 +71,7 @@ h1 {
 }
 
 .card .wrapper {
-    background-color: #fff;
+    background-color: rgb(8, 30, 92);
     min-height: 540px;
     position: relative;
     overflow: hidden;
@@ -117,9 +117,9 @@ h1 {
     transform: translateY(-60px);
 }
 
-.example-2 .wrapper {
+/* .example-2 .wrapper {
     background: url(ok.jpg) center/cover no-repeat;
-}
+} */
 
 .example-2 .wrapper:hover .menu-content span {
     transform: translate(-50%, -10px);
