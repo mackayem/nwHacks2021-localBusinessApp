@@ -17,7 +17,7 @@ Jyoti Bisht
 
 Phil Fiess
 
-Salona Koirala
+Salina Koirala
 
 ## Idea
 
