@@ -7,7 +7,11 @@
 }
 
 .underline--magical:hover {
-    background-size: 100% 88%;
+    background-size: 100% 100%;
+}
+
+.w3-button:hover {
+  background-color: #fff;!important;
 }
 
 body {
@@ -160,6 +164,9 @@ i {
   padding-bottom: 5%;
 }
 
+.custom-button {
+
+}
 
 /* card styling */
 
