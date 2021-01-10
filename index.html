@@ -3,7 +3,8 @@
 <html>
 
 <!-- head section  begins -->
-  <head>
+
+<head>
     <!-- Required meta tags (can be changed as desired)-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -34,12 +35,14 @@
 
     <!-- insert favicon of your choice -->
     <link rel="shortcut icon" type="image/ico" href="#" />
-  </head>
+</head>
 <!-- head section ends -->
 
 
 <!-- body section starts -->
-  <body>
+
+<body>
+
     <!-- <script type="text/javascript" src"bootstrap-5.0.0/js/boostrap.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -47,174 +50,195 @@
     <!-- first section for the main page starts -->
     <div class="container-fluid">
 
-      <section>
-        <!-- Nav Bar (kindly add features of your choice)-->
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <!-- **** working title, let's think of an app name together later! -->
-          <a class="navbar-brand" href="#"><h4>Local</h4></a>
-          <!-- **** ADD LOGO BUTTON HERE *** -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <section>
+            <!-- Nav Bar (kindly add features of your choice)-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- **** working title, let's think of an app name together later! -->
+                <a class="navbar-brand" href="#">
+                    <h4>Local</h4>
+                </a>
+                <!-- **** ADD LOGO BUTTON HERE *** -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <!-- nav bar items listed -->
-            <!-- href inserted for scrolling to the desired location on the main page -->
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="#"><h5>ABOUT</h5></a></li>
-              <li class="nav-item"><a class="nav-link" href="#"><h5>CONTACT US</h5></a></li>
-            </ul>
-          </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- nav bar items listed -->
+                    <!-- href inserted for scrolling to the desired location on the main page -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <h5>ABOUT</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <h5>CONTACT US</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-        <!-- Title/Splash -->
-        <div class="row">
-          <div class="col-lg-6">
-            <!-- the text would be about what the website is about, and the tagline(if any) -->
-            <h1 id="txt">Let us connect you to local businesses in your community</h1>
-            <h2 id="txt">Enter your location:</h2>
-            <div class="input-group input-group-lg">
-              <input class="form-control" type="text" name="" value="" aria-label-"Location Input">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Go
+            <!-- Title/Splash -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- the text would be about what the website is about, and the tagline(if any) -->
+                    <h1 id="txt">Let us connect you to <span class="underline--magical">local businesses</span> in your community</h1>
+                    <h2 id="txt">Enter your location:</h2>
+                    <div class="input-group input-group-lg">
+                        <input class="form-control" type="text" name="" value="" aria-label- "Location Input">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Go
                   <!-- <span class="glyphicon glyphicon-arrow-right" aria-hidden="true">Go</span> -->
                 </button>
-              </div>
-            </div>
-          </div><!--end column-->
-          <div class="col-lg-6">
-            <!-- enter humaans image , it will appear to the right -->
-            <!-- <img class="title-image" src="imgs/dummy.jpg" alt="an image"> -->
-
-            <script type="text/javascript">
-            document.write('<img class="title-image img-fluid" src="imgs/allura/Allura-med' + Math.floor(Math.random() * 10) + '.png">');
-            // document.write(Math.floor(Math.random() * 10));
-            </script>
-
-          </div><!--end column-->
-        </div><!--end row-->
-      </section>
-    <!-- first section ends -->
-
-
-<!-- second section begins -->
-<!-- my idea- To list some features that our website offers, it could be created using bootstrap col-lg-x (depending on how many functionalities our website has to offer)-->
-
-<!-- section 2 begins -->
-      <section id="offerings">
-
-          <div class="row">
-            <div class="feature-box col-lg-3">
-
-              <!-- kindly enter relevant font awesome (if needed by you) in place of xxxxx and then uncomment them-->
-              <!-- <i class="fas xxxxxxxxx fa-3x"></i> -->
-              <h3>
-                <i class="fas fa-book-open"></i>
-                <br>IN YOUR NEIGHBORHOOD
-              </h3>
-              <p>LOCAL lists businesses found closest to you based on your location, with the option to shorten or extend the search radius.</p>
-            </div>
-
-            <!-- feature #2 -->
-            <div class="feature-box col-lg-3">
-              <!-- <i class="fas xxxxxxx fa-3x"></i> -->
-              <h3>
-                <i class="fas fa-book-open"></i>
-                <br>SUGGESTIONS BASED ON WEATHER
-              </h3>
-              <p>See suggested activites with local businesses based on the weather in your location.</p>
-            </div>
-
-            <!-- feature #3 -->
-            <div class="feature-box col-lg-3">
-              <!-- <i class="fas fa-plug fa-3x"></i> -->
-              <h3>
-                <i class="fas fa-book-open"></i>
-                <br>FILTER RESULTS
-              </h3>
-              <p>Filter results by parameters such as food, shopping or getting active.</p>
-            </div>
-
-            <!-- feature #4 -->
-            <div class="feature-box col-lg-3">
-              <!-- <i class="fas fa-glasses fa-3x"></i> -->
-              <h3>
-                <i class="fas fa-book-open"></i>
-                <br>CHECK OUT ONLINE SHOPS
-              </h3>
-              <p>Quickly see online shops for local businesses to support your local economy.</p>
-            </div>
-
-        </div><!--end row-->
-      </section>
-      <!-- second section ends -->
-
-
-      <section id="idea">
-        <h2>WHY WE MADE LOCAL</h2>
-        <p>Local Businesses have been hit hard during this pandemic. The time has been testing and overwhelming. We, at LOCAL, aim at combining the best of humanity with modern technologies and creativity. We connect local businesses with people around them
-            to keep their business running and serving customers the safety of shopping from home, the authenticity of a local business and making the communiy better, one order at a time.
-            <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Read More</button></p>
-        </p>
-
-        <div id="menu" class="w3-modal">
-            <div class="w3-modal-content w3-animate-zoom">
-                <div class="w3-container w3-black w3-display-container">
-                    <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-                    <h1 style="color: rgb(255, 255, 255);">Why Local matters more than anything right now</h1>
+                        </div>
+                    </div>
                 </div>
-                <div class="w3-container" style="background-color: black; color: white;">
-                    <br>According to Yelp, in the year 2020 from March 1 until August 31, 163,735 businesses have been closed in the U.S due to COVID-19. The number is staggering and when we think about the whole world, local businesses need the support of community more than
-                    anything in these unprecedented times. Hence, we created this website as a means to connect local businesses with people around them.
-                    <br>
-                    <h2>How does it help?</h2>
-                    <ul>
-                        <li>The safety that consumer gets while shopping at home is unmatched to any other modes of shopping.</li>
-                        <li>The local businesses can even get orders from people who might have not known they existed but the website showcases each and every business to be brought into the public eye.</li>
-                        <li>The consumers do not have to look far away from their homes and shop from location nearby them, thanks to our Location feature which helps you connect within the area you need.</li>
-                        <li>It helps keep local businesses running and they even can scale to larger neighbourhoods once they have the capacity.</li>
-                    </ul>
-                    <br> So, come join us in helping local businesses in keeping their livelihoods running and showcasing the best of humanity!
+                <!--end column-->
+                <div class="col-lg-6">
+                    <!-- enter humaans image , it will appear to the right -->
+                    <!-- <img class="title-image" src="imgs/dummy.jpg" alt="an image"> -->
+
+                    <script type="text/javascript">
+                        document.write('<img class="title-image img-fluid" src="imgs/allura/Allura-med' + Math.floor(Math.random() * 10) + '.png">');
+                        // document.write(Math.floor(Math.random() * 10));
+                    </script>
+
+                </div>
+                <!--end column-->
+            </div>
+            <!--end row-->
+        </section>
+        <!-- first section ends -->
+
+
+        <!-- second section begins -->
+        <!-- my idea- To list some features that our website offers, it could be created using bootstrap col-lg-x (depending on how many functionalities our website has to offer)-->
+
+        <!-- section 2 begins -->
+        <section id="offerings">
+
+            <div class="row">
+                <div class="feature-box col-lg-3">
+
+                    <!-- kindly enter relevant font awesome (if needed by you) in place of xxxxx and then uncomment them-->
+                    <!-- <i class="fas xxxxxxxxx fa-3x"></i> -->
+                    <h3>
+                        <i class="fas fa-book-open"></i>
+                        <br>IN YOUR NEIGHBORHOOD
+                    </h3>
+                    <p>LOCAL lists businesses found closest to you based on your location, with the option to shorten or extend the search radius.</p>
+                </div>
+
+                <!-- feature #2 -->
+                <div class="feature-box col-lg-3">
+                    <!-- <i class="fas xxxxxxx fa-3x"></i> -->
+                    <h3>
+                        <i class="fas fa-book-open"></i>
+                        <br>SUGGESTIONS BASED ON WEATHER
+                    </h3>
+                    <p>See suggested activites with local businesses based on the weather in your location.</p>
+                </div>
+
+                <!-- feature #3 -->
+                <div class="feature-box col-lg-3">
+                    <!-- <i class="fas fa-plug fa-3x"></i> -->
+                    <h3>
+                        <i class="fas fa-book-open"></i>
+                        <br>FILTER RESULTS
+                    </h3>
+                    <p>Filter results by parameters such as food, shopping or getting active.</p>
+                </div>
+
+                <!-- feature #4 -->
+                <div class="feature-box col-lg-3">
+                    <!-- <i class="fas fa-glasses fa-3x"></i> -->
+                    <h3>
+                        <i class="fas fa-book-open"></i>
+                        <br>CHECK OUT ONLINE SHOPS
+                    </h3>
+                    <p>Quickly see online shops for local businesses to support your local economy.</p>
+                </div>
+
+            </div>
+            <!--end row-->
+        </section>
+        <!-- second section ends -->
+
+
+        <section id="idea">
+            <h2>WHY WE MADE LOCAL</h2>
+            <p>Local Businesses have been hit hard during this pandemic. The time has been testing and overwhelming. We, at LOCAL, aim at combining the best of humanity with modern technologies and creativity. We connect local businesses with people around
+                them to keep their business running and serving customers the safety of shopping from home, the authenticity of a local business and making the communiy better, one order at a time.
+                <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Read More</button></p>
+            </p>
+
+            <div id="menu" class="w3-modal">
+                <div class="w3-modal-content w3-animate-zoom">
+                    <div class="w3-container w3-black w3-display-container">
+                        <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                        <h1 style="color: rgb(255, 255, 255);">Why Local matters more than anything right now</h1>
+                    </div>
+                    <div class="w3-container" style="background-color: black; color: white;">
+                        <br>According to Yelp, in the year 2020 from March 1 until August 31, 163,735 businesses have been closed in the U.S due to COVID-19. The number is staggering and when we think about the whole world, local businesses need the support
+                        of community more than anything in these unprecedented times. Hence, we created this website as a means to connect local businesses with people around them.
+                        <br>
+                        <h2>How does it help?</h2>
+                        <ul>
+                            <li>The safety that consumer gets while shopping at home is unmatched to any other modes of shopping.</li>
+                            <li>The local businesses can even get orders from people who might have not known they existed but the website showcases each and every business to be brought into the public eye.</li>
+                            <li>The consumers do not have to look far away from their homes and shop from location nearby them, thanks to our Location feature which helps you connect within the area you need.</li>
+                            <li>It helps keep local businesses running and they even can scale to larger neighbourhoods once they have the capacity.</li>
+                        </ul>
+                        <br> So, come join us in helping local businesses in keeping their livelihoods running and showcasing the best of humanity!
+                    </div>
                 </div>
             </div>
-        </div>
-      </section>
+        </section>
 
-    <!-- enter stock images from unsplash of local businesses in form of carouseles(don't worry I will edit the images with nice texts on them if this step is needed to be done) -->
-    <div id="carousel-example" class="carousel slide" data-ride="carousel" data-interval="1400" style="padding: 5% 7%;">
-        <!-- creating carousel -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="1 " src="images/carousel1.jpeg" width="70%" height="50% " alt="1">
+        <!-- enter stock images from unsplash of local businesses in form of carouseles(don't worry I will edit the images with nice texts on them if this step is needed to be done) -->
+        <div id="carousel-example" class="carousel slide" data-ride="carousel" data-interval="1400" style="padding: 5% 7%;">
+            <!-- creating carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="1 " src="images/carousel1.jpeg" width="70%" height="50% " alt="1">
+                </div>
+                <!-- second slide -->
+                <div class="carousel-item">
+                    <img class="2" src="images/carousel2.jpeg" width="70%" height="50% " alt="2">
+                </div>
+                <!-- third slide -->
+                <div class="carousel-item">
+                    <img class="3" src="images/carousel3.jpeg" width="70%" height="50% " alt="3">
+                </div>
+                <div class="carousel-item">
+                    <img class="3" src="images/carousel4.jpeg" width="70%" height="50% " alt="3">
+                </div>
             </div>
-            <!-- second slide -->
-            <div class="carousel-item">
-                <img class="2" src="images/carousel2.jpeg" width="70%" height="50% " alt="2">
-            </div>
-            <!-- third slide -->
-            <div class="carousel-item">
-                <img class="3" src="images/carousel3.jpeg" width="70%" height="50% " alt="3">
-            </div>
-            <div class="carousel-item">
-                <img class="3" src="images/carousel4.jpeg" width="70%" height="50% " alt="3">
-            </div>
-        </div>
 
 
-      <!-- bootstrap cards to display queried results -->
-      <!-- Adding these cards only to the bottom to test the front-end design,
+            <!-- bootstrap cards to display queried results -->
+            <!-- Adding these cards only to the bottom to test the front-end design,
       Once the back-end is working, we can integrate these to display when results are queried -->
-      <section id="contribute">
-
-        <div id="#bootstrap-cards"></div>
-        <script>
-          $("#bootstrap-cards").load("/cards-example.html");
-        </script>
-      </section>
+            <section id="contribute">
 
 
+                <div id="#bootstrap-cards"></div>
+                <script>
+                    $("#bootstrap-cards").load("/cards-example.html");
+                </script>
+            </section>
 
 
-    </div><!--fluid container-->
-  </body>
+        </div>
+
+        <div>
+            <h2 style="text-align: center;"> <span class="underline--magical">
+              <a href="cardexamples.html">Explore all businesses</a></span></h2>
+        </div>
+        \
+        <!--fluid container-->
+</body>
+
 </html>
