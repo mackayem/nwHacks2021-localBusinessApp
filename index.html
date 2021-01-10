@@ -21,11 +21,16 @@
     <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
 
+
     <!-- css file -->
     <link rel="stylesheet" href="styles.css" />
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- working title, we'll figure out a name as a team  later! -->
     <title>LOCAL</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>ENTER TITLE</title>
+
 
     <!-- insert favicon of your choice -->
     <link rel="shortcut icon" type="image/ico" href="#" />
@@ -100,8 +105,38 @@
       <!-- my idea- To list some features that our website offers, it could be created using bootstrap col-lg-x (depending on how many functionalities our website has to offer)-->
       <section id="offerings">
         <div class="row">
-          <!-- feature #1 -->
-          <div class="feature-box col-lg-3">
+
+            <div class="col-lg-6">
+                <!-- the text would be about what the website is about, and the tagline(if any) -->
+                <h1 id="txt">TEXT TO BE DISPLAYED ON THE LEFT</h1>
+                <!-- buttons if needed for opening other html page -->
+                <button type="button " class="btn btn-dark download-button">
+                
+                    ITEM -1 
+                </button>
+                <button type="button " class="btn btn-light download-button">
+                    
+                    ITEM - 2
+                </button>
+            </div>
+            <div class="col-lg-6">
+                <!-- enter humaans image , it will appear to the right -->
+                <img class="title-image" src="images/mainpage1.png" alt="an image">
+            </div>
+        </div>
+        </div>
+</section>
+<!-- first section ends -->
+
+<!-- second section begins -->
+<!-- my idea- To list some features that our website offers, it could be created using bootstrap col-lg-x (depending on how many functionalities our website has to offer)-->
+
+<!-- section 2 begins -->
+<section id="offerings">
+
+    <div class="row">
+        <div class="feature-box col-lg-3">
+          
             <!-- kindly enter relevant font awesome (if needed by you) in place of xxxxx and then uncomment them-->
             <!-- <i class="fas xxxxxxxxx fa-3x"></i> -->
             <h3>
@@ -174,6 +209,54 @@
 
 
 
+<section id="idea">
+    <h2> WHY WE MADE LOCAL</h2>
+    <p>Local Businesses have been hit hard dusing this pandemic. The time has been testing and overwhelming. We, at LOCATE, aim at combining the best of humanity with modern technologies and creativity. We connect local businesses with people around them
+        to keep their business running and serving customers the safety of shopping from home, the authenticity of a local business and making the communiy better, one order at a time.
+        <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Read More</button></p>
+    </p>
+
+    <div id="menu" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container w3-black w3-display-container">
+                <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+                <h1 style="color: rgb(255, 255, 255);">Why Local matters more than anything right now</h1>
+            </div>
+            <div class="w3-container" style="background-color: black; color: white;">
+                <br> According to Yelp, till AUG 31, 163,735 businesses have been closed in the U.S due to COVID-19 since March 1. The number is stagerring and when we think about the whole world. Local businesses need the support of community more than
+                anything in these unprecedented times. Hence, we created this website as a means to connect local businesses with people around them.
+                <br>
+                <h2> How does it help?</h2>
+                <ul>
+                    <li>The safety that consumer gets while shopping at home is unmatched to any other modes of shopping.</li>
+                    <li>The local businesses can even get orders from people who might have not known they existed but the website showcases each and every business to be brought into the public eye</li>
+                    <li>The consumers do not have to look far away from their homes and shop from location nearby them , thanks to our Location feature which helps you connect within the area you need.</li>
+                    <li>It helps keep local businesses running and they even can scale to larger neighbourhoods once they have the capacity</li>
+                </ul>
+                <br> So, Come join us in helping local businesses in keeping their livelihoods running and showcasing the best of humanity!
+            </div>
+        </div>
+    </div>
+
+    <!-- enter stock images from unsplash of local businesses in form of carouseles(don't worry I will edit the images with nice texts on them if this step is needed to be done) -->
+    <div id="carousel-example" class="carousel slide" data-ride="carousel" data-interval="1400" style="padding: 5% 7%;">
+        <!-- creating carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="1 " src="images/carousel1.jpeg" width="70%" height="50% " alt="1">
+            </div>
+            <!-- second slide -->
+            <div class="carousel-item">
+                <img class="2" src="images/carousel2.jpeg" width="70%" height="50% " alt="2">
+            </div>
+            <!-- third slide -->
+            <div class="carousel-item">
+                <img class="3" src="images/carousel3.jpeg" width="70%" height="50% " alt="3">
+            </div>
+            <div class="carousel-item">
+                <img class="3" src="images/carousel4.jpeg" width="70%" height="50% " alt="3">
+            </div>
+        </div>
 
       <h1>*** These cards can display the results***</h1>
       <!-- bootstrap cards to display queried results -->
@@ -207,6 +290,8 @@
 
 
 
+
     </div><!--fluid container-->
   </body>
 </html>
+
