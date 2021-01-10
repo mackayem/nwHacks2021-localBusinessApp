@@ -10,11 +10,13 @@ Contributors:
 ### Front-end:
 
 Emily Mackay
+
 Jyoti Bisht
 
 ### Back-end
 
 Phil Fiess
+
 Salona Koirala
 
 ## Idea
