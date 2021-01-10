@@ -8,6 +8,7 @@
  const fetch = require('node-fetch');
  const helmet = require('helmet'); //security for the API
  const bodyParser = require('body-parser');
+ const SerpApi = require('google-search-results-nodejs');
 
  //env vars
  require('dotenv').config();
@@ -30,7 +31,24 @@ app.get('/', async (req, res) => {
       const weatherData = {
           weather: openWeatherData,
       }
-      res.json(weatherData);
+    //   res.json(weatherData);
+        const search = new SerpApi.GoogleSearch("e69fe506428b4edb13612338fce04bd2f73c81257942630f017498de92a55dfb");
+
+        const params = {
+        engine: "google",
+        q: "school",
+        ll: "%4040.7455096%2C-74.0083012%2C15.1z",
+        type: "search",
+        google_domain: "google.com",
+        num: "5"
+        };
+
+        const callback = function(data) {
+        console.log(data['local_results']);
+        };
+
+        // Show result as JSON
+        search.json(params, callback);
 });
 
 
