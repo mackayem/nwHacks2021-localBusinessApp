@@ -18,12 +18,25 @@ h3 {
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  color: rgb(8, 30, 92);
   font-family: "Abril Fatface", cursive;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(8, 30, 92);
+  font-weight: bold;
 }
 
 p {
   color: grey;
+}
+
+h5 {
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(8, 30, 92);
 }
 
 #title {

@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
 
 
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
     <!-- css file -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles.css" />
@@ -58,10 +61,8 @@
             <!-- nav bar items listed -->
             <!-- href inserted for scrolling to the desired location on the main page -->
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">FIRST TITLE</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">SECOND TITLE</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">THIRD TITLE</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">FOURTH TITLE</a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><h5>ABOUT</h5></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><h5>CONTACT US</h5></a></li>
             </ul>
           </div>
         </nav>
@@ -86,7 +87,7 @@
             <!-- <img class="title-image" src="imgs/dummy.jpg" alt="an image"> -->
 
             <script type="text/javascript">
-            document.write('<img class="title-image" src="imgs/allura/Allura' + Math.floor(Math.random() * 10) + '.png">');
+            document.write('<img class="title-image img-fluid" src="imgs/allura/Allura-med' + Math.floor(Math.random() * 10) + '.png">');
             // document.write(Math.floor(Math.random() * 10));
             </script>
 
@@ -108,40 +109,40 @@
               <!-- kindly enter relevant font awesome (if needed by you) in place of xxxxx and then uncomment them-->
               <!-- <i class="fas xxxxxxxxx fa-3x"></i> -->
               <h3>
-                  <i class="fas fa-book-open"></i>
-                  <br> FIRST FEATURE
+                <i class="fas fa-book-open"></i>
+                <br>IN YOUR NEIGHBORHOOD
               </h3>
-              <p>brief description of the feature</p>
+              <p>LOCAL lists businesses found closest to you based on your location, with the option to shorten or extend the search radius.</p>
             </div>
 
             <!-- feature #2 -->
             <div class="feature-box col-lg-3">
               <!-- <i class="fas xxxxxxx fa-3x"></i> -->
               <h3>
-                  <i class="fas fa-book-open"></i>
-                  <br> SECOND FEATURE
+                <i class="fas fa-book-open"></i>
+                <br>SUGGESTIONS BASED ON WEATHER
               </h3>
-              <p>brief description of the feature</p>
+              <p>See suggested activites with local businesses based on the weather in your location.</p>
             </div>
 
             <!-- feature #3 -->
             <div class="feature-box col-lg-3">
               <!-- <i class="fas fa-plug fa-3x"></i> -->
               <h3>
-                  <i class="fas fa-book-open"></i>
-                  <br> THIRD FEATURE
+                <i class="fas fa-book-open"></i>
+                <br>FILTER RESULTS
               </h3>
-              <p>brief description of the feature</p>
+              <p>Filter results by parameters such as food, shopping or getting active.</p>
             </div>
 
             <!-- feature #4 -->
             <div class="feature-box col-lg-3">
               <!-- <i class="fas fa-glasses fa-3x"></i> -->
               <h3>
-                  <i class="fas fa-book-open"></i>
-                  <br> FOURTH FEATURE
+                <i class="fas fa-book-open"></i>
+                <br>CHECK OUT ONLINE SHOPS
               </h3>
-              <p>brief description of the feature</p>
+              <p>Quickly see online shops for local businesses to support your local economy.</p>
             </div>
 
         </div><!--end row-->
@@ -151,7 +152,7 @@
 
       <section id="idea">
         <h2>WHY WE MADE LOCAL</h2>
-        <p>Local Businesses have been hit hard during this pandemic. The time has been testing and overwhelming. We, at LOCATE, aim at combining the best of humanity with modern technologies and creativity. We connect local businesses with people around them
+        <p>Local Businesses have been hit hard during this pandemic. The time has been testing and overwhelming. We, at LOCAL, aim at combining the best of humanity with modern technologies and creativity. We connect local businesses with people around them
             to keep their business running and serving customers the safety of shopping from home, the authenticity of a local business and making the communiy better, one order at a time.
             <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">Read More</button></p>
         </p>
@@ -200,35 +201,15 @@
         </div>
 
 
-      <br>
-      <h1>*** These cards can display the results***</h1>
       <!-- bootstrap cards to display queried results -->
       <!-- Adding these cards only to the bottom to test the front-end design,
       Once the back-end is working, we can integrate these to display when results are queried -->
       <section id="contribute">
 
-        <!-- <div class="card-deck"> -->
-
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title">Joe's Cafe</h2>
-            <p>{Address, Hours, Contact should query here.} Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-
-          <!-- <div class="card h-50">
-            <img class="card-img-top" src="imgs/clifford-5ZB0w0vSgPk-unsplash.jpg" alt="">
-            <div class="card-img-overlay">
-              <h2>Enjoy a coffee on the patio...</h2>
-            </div>
-            <div class="card-body">
-              <h2 class="card-title">Joe's Cafe</h2>
-              <p>{Address, Hours, Contact should query here.} Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div> -->
-
-        <!-- </div>  -->
-        <!--card deck-->
+        <div id="#bootstrap-cards"></div>
+        <script>
+          $("#bootstrap-cards").load("/cards-example.html");
+        </script>
       </section>
 
 
