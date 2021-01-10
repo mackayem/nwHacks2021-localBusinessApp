@@ -22,8 +22,10 @@ const port = process.env.PORT || 4001;
 
 //http requests
 //GETS to front page
-app.get('/', async (req, res) => {
+app.get('/weather', async (req, res) => {
       const openWeatherAPIKEY = process.env.OPEN_WEATHER_MAP_API_KEY;
+      const lat = req.body.latitude;
+      const lng = req.body.longitude;
       const weatherMapUrl = `https://api.openweathermap.org/data/2.5/weather?q=vancouver&appid=${openWeatherAPIKEY}`;
       const openWeatherResponse = await fetch(weatherMapUrl).catch(e => { console.log(e) });
       const openWeatherData = await openWeatherResponse.json().catch(e => { console.log(e) });
@@ -31,9 +33,13 @@ app.get('/', async (req, res) => {
       const weatherData = {
           weather: openWeatherData,
       }
-    //   res.json(weatherData);
-        const search = new SerpApi.GoogleSearch("e69fe506428b4edb13612338fce04bd2f73c81257942630f017498de92a55dfb");
-
+      res.send(weatherData);
+    });
+app.get('/listing', async (req, res) => {
+        const openWeatherAPIKEY = process.env.GOOGLE_SEARCH_API_KEY;
+        const search = new SerpApi.GoogleSearch(`${googleSearchAPI}`);
+        const lat = req.body.latitude;
+        const lng = req.body.longitude;
         const params = {
         engine: "google",
         q: "school",
@@ -48,10 +54,27 @@ app.get('/', async (req, res) => {
         };
 
         // Show result as JSON
-        search.json(params, callback);
+        const list = { result: search.json(params, callback), }
+        res.send(list);
 });
+app.get('/address', async (req, res) => {
+        const lat = req.body.latitude;
+        const lng = req.body.longitude;
+            const locationAPIKey = 'process.env.LOCATION_API_KEY';
+            var datas;
+            const locationURL = `http://api.positionstack.com/v1/reverse?access_key=${locationAPIKey}&query=${lat},${lng}&limit=10&output=json`;
+            const locationResponse = await fetch(locationURL).catch(e => { console.log(e) });
+            const openlocationData = await locationResponse.json().catch(e => { console.log(e) });
+            for(datas = 0; datas < 10; datas++){
+                console.log(openlocationData.data[datas].name, openlocationData.data[datas].country);
+            }
+            const locationData = {
+                location: openlocationData,
+            }
+            console.log(locationData)
+            res.send(locationData)
 
-
+});
 
 //app listening to port
 app.listen(port, () => {
