@@ -105,8 +105,8 @@ p {
 
 
 /* card styling */
-.card-image-top {
+/* .card-image-top {
   object-fit: cover;
-  width: auto;
-  height: 10vw;
-}
+  width: 100%;!important;
+  height: 200px;!important;
+} */

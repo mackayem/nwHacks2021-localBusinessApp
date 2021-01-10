@@ -80,7 +80,13 @@
           </div><!--end column-->
           <div class="col-lg-6">
             <!-- enter humaans image , it will appear to the right -->
-            <img class="title-image" src="imgs/dummy.jpg" alt="an image">
+            <!-- <img class="title-image" src="imgs/dummy.jpg" alt="an image"> -->
+
+            <script type="text/javascript">
+            document.write('<img class="title-image" src="imgs/humaaans/Humaaans' + Math.floor(Math.random() * 10) + '.png">');
+            // document.write(Math.floor(Math.random() * 10));
+            </script>
+
           </div><!--end column-->
         </div><!--end row-->
 
@@ -168,12 +174,21 @@
 
 
 
+
+      <h1>*** These cards can display the results***</h1>
       <!-- bootstrap cards to display queried results -->
       <!-- Adding these cards only to the bottom to test the front-end design,
       Once the back-end is working, we can integrate these to display when results are queried -->
       <section id="contribute">
 
         <!-- <div class="card-deck"> -->
+
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Joe's Cafe</h2>
+            <p>{Address, Hours, Contact should query here.} Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
 
           <!-- <div class="card h-50">
             <img class="card-img-top" src="imgs/clifford-5ZB0w0vSgPk-unsplash.jpg" alt="">
