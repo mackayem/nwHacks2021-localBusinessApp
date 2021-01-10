@@ -22,10 +22,9 @@ const port = process.env.PORT || 4001;
 
 //http requests
 //GETS to front page
-app.get('/weather', async (req, res) => {
+app.get('/weather:currentLocation', async (req, res) => {
+      console.log(req.body);
       const openWeatherAPIKEY = process.env.OPEN_WEATHER_MAP_API_KEY;
-      const lat = req.body.latitude;
-      const lng = req.body.longitude;
       const weatherMapUrl = `https://api.openweathermap.org/data/2.5/weather?q=vancouver&appid=${openWeatherAPIKEY}`;
       const openWeatherResponse = await fetch(weatherMapUrl).catch(e => { console.log(e) });
       const openWeatherData = await openWeatherResponse.json().catch(e => { console.log(e) });
