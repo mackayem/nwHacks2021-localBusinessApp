@@ -1,42 +1,54 @@
+.underline--magical {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+}
+
+.underline--magical:hover {
+    background-size: 100% 88%;
+}
+
 h1 {
-  font-size: 3rem;
-  color: rgb(8, 30, 92);
-  font-weight: bold;
-  font-family: "Ubuntu", sans-serif;
+    font-size: 3rem;
+    color: rgb(8, 30, 92);
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
 }
 
 h2 {
-  font-size: 2rem;
-  color: rgb(8, 30, 92);
-  font-family: "Ubuntu", sans-serif;
-  /* font-size: 3.5rem; */
-  line-height: 3;
+    font-size: 2rem;
+    color: rgb(8, 30, 92);
+    font-family: "Ubuntu", sans-serif;
+    /* font-size: 3.5rem; */
+    line-height: 3;
 }
 
 h3 {
-  font-family: "Ubuntu", sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 h4 {
-  font-size: 3.5rem;
-  color: rgb(8, 30, 92);
-  font-family: "Abril Fatface", cursive;
+    font-size: 3.5rem;
+    color: rgb(8, 30, 92);
+    font-family: "Abril Fatface", cursive;
 }
 
 h5 {
-  font-size: 1.5rem;
-  font-family: "Ubuntu", sans-serif;
-  color: rgb(8, 30, 92);
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(8, 30, 92);
+    font-weight: bold;
 }
 
 p {
-  color: grey;
+    color: grey;
 }
 
 h5 {
-  font-family: "Ubuntu", sans-serif;
-  color: rgb(8, 30, 92);
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(8, 30, 92);
 }
 
 #title {
@@ -70,18 +82,21 @@ h5 {
 
 
 /* download buttons */
+
 .download-button {
     margin: 5% 3% 5% 0%;
 }
 
 
 /*image section */
+
 .title-image {
     width: 120%;
 }
 
 
 /* feature section */
+
 #features {
     padding: 7% 15%;
 }
@@ -93,6 +108,7 @@ h5 {
 
 
 /* main idea section */
+
 #idea {
     padding: 7% 15%;
     text-align: center;
@@ -110,14 +126,16 @@ h5 {
 
 
 /* carousel styling */
+
 .carousel-inner {
     text-align: center;
     color: black;
 }
 
 
-
 /* card styling */
+
+
 /* .card-image-top {
   object-fit: cover;
   width: 100%;!important;
