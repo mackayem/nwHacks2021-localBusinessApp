@@ -10,6 +10,11 @@
     background-size: 100% 88%;
 }
 
+body {
+  background-image: linear-gradient(to right, #fff, #e1f2ff);
+  font-family: "Ubuntu", sans-serif;
+}
+
 h1 {
     font-size: 3rem;
     color: rgb(8, 30, 92);
@@ -151,8 +156,8 @@ h5 {
 
 i {
   font-size: 4rem;
-  color: rgb(112, 112, 112);
-  padding-bottom: 5git%;
+  color: #8fd3f4;
+  padding-bottom: 5%;
 }
 
 
